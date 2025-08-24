@@ -1,4 +1,6 @@
-# RT-Cache: Retrieval-Augmented Robot Control
+# RT-Cache: Training-Free Retrieval for Real-Time Manipulation
+
+**Project Page**: https://rt-cache.github.io/
 
 This repository implements RT-Cache, a retrieval-augmented system for robot control that uses OpenVLA embeddings and vector similarity search to find relevant action trajectories from past demonstrations.
 
@@ -245,11 +247,11 @@ The `experiments/` directory contains baseline implementations:
 If you use RT-Cache in your research, please cite:
 
 ```bibtex
-@software{rtcache2024,
-  title={RT-Cache: Retrieval-Augmented Robot Control},
-  author={Your Name},
-  year={2024},
-  url={https://github.com/yourusername/rt-cache}
+@article{kwon2025rtcache,
+  title={RT-Cache: Training-Free Retrieval for Real-Time Manipulation},
+  author={Kwon, Owen and George, Abraham and Bartsch, Alison and Farimani, Amir Barati},
+  journal={arXiv preprint arXiv:2505.09040},
+  year={2025}
 }
 ```
 
