@@ -1,0 +1,344 @@
+# RT-Cache .gitignore
+
+# ==============================================================================
+# Python
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+# poetry.lock  # Keep poetry.lock for reproducible builds
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ==============================================================================
+# Data and Models
+# ==============================================================================
+
+# Dataset files
+data/
+datasets/
+*.tfrecord
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Model files
+models/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.pb
+
+# Image files (keep sample images)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+!docs/images/*
+!samples/*
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ==============================================================================
+# Logs and Outputs
+# ==============================================================================
+
+logs/
+*.log
+output/
+results/
+# experiments/  # Keep experiments directory for research baselines
+runs/
+wandb/
+mlruns/
+
+# ==============================================================================
+# Cache and Temporary Files
+# ==============================================================================
+
+cache/
+.cache/
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ==============================================================================
+# IDE and Editor
+# ==============================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.vim
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==============================================================================
+# OS Specific
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# Docker
+# ==============================================================================
+
+docker/backup/
+*.dockerignore
+
+# ==============================================================================
+# Secrets and Credentials
+# ==============================================================================
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Credentials
+*.pem
+*.key
+*.crt
+*.cert
+credentials/
+secrets/
+
+# ==============================================================================
+# Project Specific
+# ==============================================================================
+
+# MongoDB data
+mongo_data/
+mongodata/
+
+# Qdrant data
+qdrant_storage/
+qdrant_data/
+
+# Processed data
+processed/
+embeddings/
+
+# Visualization outputs
+visualizations/
+plots/
+figures/
+
+# Session logs
+sessions/
+
+# Backup files
+backup/
+backups/
+*.bak
+
+# Test data
+test_data/
+test_output/
+
+# Profiling
+*.prof
+*.lprof
+profile/
+
+# Custom ignore patterns (add your own below)

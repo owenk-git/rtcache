@@ -1,0 +1,32 @@
+# RT-Cache Integration Requirements for VINN
+
+# Core ML libraries
+torch>=1.9.0
+torchvision>=0.10.0
+numpy>=1.21.0
+
+# Image processing
+pillow>=8.0.0
+
+# Vector database and storage
+qdrant-client>=1.1.0
+pymongo>=4.0.0
+
+# HTTP requests for embedding server
+requests>=2.25.0
+
+# Scientific computing
+scikit-learn>=1.0.0
+
+# Visualization (optional)
+matplotlib>=3.3.0
+
+# Development tools (optional)
+tqdm>=4.60.0
+
+# Original VINN dependencies (if using original modules)
+wandb  # For experiment tracking (optional)
+byol-pytorch  # For BYOL implementation (optional)
+
+# Note: Install PyTorch with appropriate CUDA version:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118

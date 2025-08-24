@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "rt-cache"
+version = "1.0.0"
+description = "RT-Cache: Retrieval-Augmented Robot Control System"
+authors = ["RT-Cache Team <your-email@example.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/yourusername/rt-cache"
+keywords = ["robotics", "retrieval", "machine-learning", "openvla", "robot-control"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Robotics"
+]
+
+[[tool.poetry.source]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "explicit"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "2.2.0"
+torchvision = "0.17.0"
+torchaudio = "2.2.0"
+fastapi = "^0.115.6"
+numpy = "<2"
+python-multipart = "^0.0.20"
+uvicorn = "^0.34.0"
+tfds-nightly = "^4.9.7.dev202412230044"
+apache-beam = "^2.61.0"
+jupyterlab = "^4.3.4"
+transformers = "^4.48.1"
+pymongo = "^4.10.1"
+pandas = "^2.2.3"
+flask = "^3.0.0"
+flask-cors = "^4.0.0"
+qdrant-client = "^1.7.0"
+llama-index = "^0.9.0"
+llama-index-vector-stores-qdrant = "^0.1.0"
+python-dotenv = "^1.0.0"
+pyyaml = "^6.0.1"
+requests = "^2.31.0"
+pillow = "^10.1.0"
+tqdm = "^4.66.1"
+scipy = "^1.11.4"
+scikit-learn = "^1.3.2"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
